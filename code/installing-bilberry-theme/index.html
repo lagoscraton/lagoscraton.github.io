@@ -23,7 +23,7 @@
         
 
         
-        <title>My cool new Blog  | 404 Page not found</title>
+        <title>My cool new Blog  | Installing Bilberry Theme</title>
     </head>
     <body class="bilberry-hugo-theme">
         
@@ -82,24 +82,121 @@
 
         <div class="main container">
             
-
-<div class="content">
+     
     <div class="article-wrapper u-cf single">
-        <a class="bubble" href="/">
-            <i class="fa fa-fw fa-exclamation-triangle"></i>
-        </a>
+        
+            <a class="bubble" href="/code/installing-bilberry-theme/">
+    <i class="fa fa-fw fa-code"></i>
+</a>
 
-        <article class="error404 article">
-            <div class="content">
-                <h3>WOAH BUDDY!</h3>
-                <p></p>
-                <p>This is definitly not the page you're looking for...</p>
-                <p><strong>An Error 404 occured.</strong> That means the page is not available. </p>
-                <p>Please select a category at the bottom or change over to the <a href="/">&raquo; HOMEPAGE</a>.</p>
-            </div>
-        </article>
+<article class="default article">
+    
+
+    <div class="content">
+    <h3><a href="/code/installing-bilberry-theme/">Installing Bilberry Theme</a></h3>
+    <div class="meta">
+        <span class="date moment">2017-11-01</span>
+
+        
+            <span class="categories">
+                
+                    <a href="/categories/code">Code</a>
+                
+                    <a href="/categories/tutorials">Tutorials</a>
+                
+            </span>
+        
+
+        
+            <span class="author"><a href="/author/lednerb">Lednerb</a></span>
+        
     </div>
+
+    
+        <p>You will find all information to setup this theme with your hugo site
+on the official <br> <a href="https://github.com/Lednerb/bilberry-hugo-theme">Github Repository</a>.</p>
+
+<p></p>
+
+<p><strong>If you want to install this theme, follow these steps:</strong></p>
+
+<ul>
+<li>Install Hugo and create a new site:</li>
+</ul>
+
+<pre><code class="language-sh">hugo new site my-new-blog
+</code></pre>
+
+<ul>
+<li>Switch to your <code>theme</code> folder and import the latest version of the Bilberry Theme</li>
+</ul>
+
+<pre><code class="language-sh">cd my-new-blog/themes
+git clone https://github.com/Lednerb/bilberry-hugo-theme.git
+</code></pre>
+
+<ul>
+<li>Copy the example content to your new site</li>
+</ul>
+
+<pre><code class="language-sh">cp -r bilberry-hugo-theme/exampleSite/* ../
+</code></pre>
+
+<ul>
+<li>Test the installation</li>
+</ul>
+
+<pre><code class="language-sh">cd ../
+hugo server -D
+</code></pre>
+
+<ul>
+<li>Configure the <code>config.toml</code> file according to your needs</li>
+<li>Start blogging</li>
+</ul>
+    
 </div>
+
+    
+    
+    <div class="tags">
+        <i class="fa fa-tags"></i>
+        
+            <a href="/tags/hugo">Hugo</a>
+        
+            <a href="/tags/bilberry-theme">Bilberry Theme</a>
+        
+    </div>
+    
+
+
+</article>
+
+        
+    </div>
+
+    <div id="disqus_thread"></div>
+<script>
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "bilberry-hugo-theme" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+     
 
         </div>
 
